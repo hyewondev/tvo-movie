@@ -1,16 +1,19 @@
-# React with Graphql
+# React with GraphQL
 
 This project is for searching movies by keyword.
 
 ## Environment
 
 - React
-- Graphql (Apollo Client)
+- GraphQL (Apollo Client)
+- Endpoint: https://tmdb.apps.quintero.io/
 
 ## Installing
 
 ```shell
 $ git clone https://github.com/hyewondev/tvo-movie.git
+
+$ cd tvo-movie
 
 $ npm install
 
