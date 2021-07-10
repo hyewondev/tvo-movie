@@ -18,6 +18,7 @@ $ npm start
 ```
 
 ## Screens
+https://hyewondev.github.io/movie/
 
 ![img.png](public/img/list.png)
 
