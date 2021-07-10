@@ -33,8 +33,6 @@ function List(props) {
                         })
                     }
                 </div>
-
-                {movieId}
                 {
                     (movieId) ?
                         (<Detail movieId={movieId}

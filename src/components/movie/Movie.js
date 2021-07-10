@@ -20,7 +20,7 @@ function Movie(props) {
             />
             <div className="px-2 pt-2 pb-4">
                 <Rating rating={movie.rating} id={movie.id} />
-                <p className="font-bold text-lg cursor-pointer hover:text-mv-main" onClick={ openDetail }>{movie.title}</p>
+                <p className="font-bold text-base leading-5 mb-1 cursor-pointer hover:text-mv-main sm:text-lg sm:leading-6" onClick={ openDetail }>{movie.title}</p>
                 <p className="text-gray-700 text-sm">{Moment(movie.releaseDate).format('YYYY-MM-DD')}</p>
             </div>
 
