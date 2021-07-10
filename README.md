@@ -22,4 +22,4 @@ https://hyewondev.github.io/movie/
 
 ![img.png](public/img/list.png)
 
-![img.png](public/img/detail.png)
+![img.png](public/img/details.png)
