@@ -5,6 +5,7 @@ import Info from '../info/Info';
 import {GET_MOVIE} from "../../graphql/movie.query";
 import Loader from "../loader/Loader";
 import Message from "../message/Message";
+import Poster from "../poster/Poster";
 
 export default function Detail(props) {
     const { loading, error, data } = useQuery(GET_MOVIE, {
@@ -49,10 +50,12 @@ export default function Detail(props) {
                                                     <div className="px-8 py-5">
                                                         <div className="sm:flex">
                                                             <div className="w-48 mx-auto mb-3 sm:w-2/6 sm:mb-0">
-                                                                <img src={data.movies.movie.images.posters[0].image}
-                                                                     alt={data.movies.movie.title}
-                                                                     className="rounded-lg mx-auto h-60 w-full sm:h-52 md:h-72"
+                                                                <Poster posters={data.movies.movie.images.posters}
+                                                                        title={data.movies.movie.title}
+                                                                        id={data.movies.movie.id}
+                                                                        openDetail={() => {}}
                                                                 />
+
                                                             </div>
                                                             <div className="sm:ml-6 sm:w-4/6 flex-auto">
                                                                 <div className="py-1 text-blueGray-500 text-lg leading-relaxed">

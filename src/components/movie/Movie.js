@@ -1,5 +1,6 @@
 import Moment from 'moment';
 import Rating from '../rating/Rating';
+import Poster from "../poster/Poster";
 
 function Movie(props) {
     const movie = props.data.node;
@@ -13,11 +14,8 @@ function Movie(props) {
 
     return (
         <div className="border border-gray-300 rounded-lg shadow-md">
-            <img src={movie.images.posters[0].image}
-                 alt={movie.title}
-                 className="rounded-t-lg w-full h-52 sm:h-52 md:h-72 cursor-pointer"
-                 onClick={ openDetail }
-            />
+            <Poster posters={movie.images.posters} title={movie.title} id={movie.id} openDetail={openDetail} />
+
             <div className="px-2 pt-2 pb-4">
                 <Rating rating={movie.rating} id={movie.id} />
                 <p className="font-bold text-base leading-5 mb-1 cursor-pointer hover:text-mv-main sm:text-lg sm:leading-6" onClick={ openDetail }>{movie.title}</p>
