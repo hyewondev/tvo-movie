@@ -14,6 +14,7 @@ export default function Detail(props) {
     //if (loading) return  <Loader />
     //if (error) return <Message message={error.message} />
     function formatTime(time) {
+        if(time === 0) return time;
         let h = parseInt(time / 60);
         let m = time % 60;
         return (h)?`${h}h ${m}m`:`${m}m`;
