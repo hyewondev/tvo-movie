@@ -11,15 +11,9 @@ const Poster = (props) => {
                           onClick={ props.openDetail }
                     />):
                     (
-                        <div className="bg-gray-100 text-center pt-24 rounded-t-lg w-full h-52 sm:h-52 md:h-72 cursor-pointer text-gray-500"
-                             id={`image_${props.id}`} onClick={ props.openDetail } >
-                            <FaBan role="img"
-                                   focusable="false"
-                                   aria-labelledby={`image_${props.id}`}
-                                   title="no image"
-                                   className="mx-auto text-5xl text-gray-300 mb-3"
-                            />
-                            No Image
+                        <div className="bg-gray-100 text-center pt-20 sm:pt-28 rounded-t-lg w-full h-52 sm:h-52 md:h-72 cursor-pointer text-gray-500"
+                              onClick={ props.openDetail } >
+                            <span id={`image_${props.id}`}>No Image</span>
                         </div>
                     )
             }
